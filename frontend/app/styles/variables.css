@@ -1,0 +1,51 @@
+:root {
+  --color-background: #050a14;
+  --color-card-background: #0d1526;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b0b7c3;
+
+  --color-blue-main: rgba(9, 124, 228, 1);
+  --color-blue-33: rgba(9, 124, 228, 0.33);
+  --color-blue-32: rgba(9, 124, 228, 0.32);
+  --color-blue-15: rgba(9, 124, 228, 0.15);
+  --color-blue-13: rgba(9, 124, 228, 0.13);
+  --color-blue-10: rgba(9, 124, 228, 0.1);
+  --color-blue-09: rgba(8, 125, 231, 0.09);
+
+  --gradient-background: linear-gradient(
+    219.02deg,
+    var(--color-blue-33) 7.09%,
+    var(--color-blue-13) 63.93%,
+    var(--color-blue-09) 100%
+  );
+  --gradient-border: linear-gradient(
+    180deg,
+    var(--color-blue-32) 0%,
+    var(--color-blue-10) 50%,
+    var(--color-blue-15) 100%
+  );
+
+  --blur-background: 84px;
+
+  --border-width: 1.5px;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-xxl: 3rem;
+
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 1.5rem;
+  --border-radius-full: 9999px;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 3rem;
+}

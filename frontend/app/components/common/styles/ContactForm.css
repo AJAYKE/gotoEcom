@@ -1,0 +1,78 @@
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.close-button:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(77, 119, 255, 0.5);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit:hover {
+  background-color: #0052cc;
+}
+
+.button-full-width {
+  width: 100%;
+}
