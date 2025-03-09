@@ -19,7 +19,7 @@ const Features: React.FC = () => {
       </div>
 
       <div className="features-content">
-        <div>
+        <div className="mobile-frame">
           <MobileFrame />
         </div>
         <div className="features-list">

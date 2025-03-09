@@ -11,6 +11,11 @@
 .about-header {
   text-align: center;
   margin-bottom: 1.5rem;
+  border-radius: 2rem;
+  border: 0.43px solid rgba(9, 124, 228, 0.88);
+  backdrop-filter: blur(11.392406463623047px);
+  box-shadow: 1.9px 2.37px 1.9px 0px #ffffff1f;
+  background-color: rgba(11, 18, 33, 0.8);
 }
 
 .about-title {
@@ -19,9 +24,6 @@
   font-weight: 600;
   color: #fff;
   padding: 0.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(77, 119, 255, 0.3);
-  background-color: rgba(11, 18, 33, 0.8);
 }
 
 .about-description {
@@ -39,7 +41,12 @@
 }
 
 .about-card {
-  background-color: rgba(23, 33, 52, 0.5);
+  background: linear-gradient(
+    219.02deg,
+    rgba(9, 124, 228, 0.33) 7.09%,
+    rgba(9, 124, 228, 0.13) 63.93%,
+    rgba(8, 125, 231, 0.09) 100%
+  );
   border-radius: 0.75rem;
   padding: 2rem;
   position: relative;
@@ -102,6 +109,11 @@
 @media (max-width: 768px) {
   .about-cards {
     grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .about-card {
+    margin: 10px;
   }
 
   .about-section {

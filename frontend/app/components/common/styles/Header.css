@@ -114,4 +114,8 @@
   .header-container {
     padding: 8px 20px;
   }
+
+  .main-nav {
+    display: none;
+  }
 }

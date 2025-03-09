@@ -1,11 +1,11 @@
 .how-it-works-section {
-  padding: var(--spacing-xxl) 0;
-  padding: 70px;
+  padding: 80px 40px;
   display: flex;
-  gap: 55px;
   flex-direction: column;
   align-items: center;
+  background-color: #01101d;
 }
+
 .section-title {
   display: inline-block;
   font-size: 1.5rem;
@@ -13,19 +13,23 @@
   color: #fff;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(77, 119, 255, 0.3);
+  border: 1px solid rgba(9, 124, 228, 0.88);
+  backdrop-filter: blur(11px);
+  box-shadow: 1.9px 2.37px 1.9px 0px rgba(255, 255, 255, 0.12);
   background-color: rgba(11, 18, 33, 0.8);
+  margin-bottom: 40px;
 }
 
 .tabs {
   display: flex;
-  width: fit-content;
-  min-width: 600px;
-  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto 40px;
   border-radius: 50px;
   background-color: rgba(23, 33, 52, 0.5);
   border: 1px solid rgba(77, 119, 255, 0.2);
   overflow: hidden;
+  position: relative;
 }
 
 .tab {
@@ -45,18 +49,66 @@
 .tab.active {
   background-color: rgba(11, 18, 33, 0.8);
   color: #fff;
-  border: 1px solid rgba(77, 119, 255, 0.3);
+  border: 1px solid rgba(9, 124, 228, 0.88);
   box-shadow: 0 0 10px rgba(77, 119, 255, 0.1);
 }
 
+.tab-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .how-it-works-section {
+    padding: 60px 30px;
+  }
+}
+
 @media (max-width: 768px) {
+  .how-it-works-section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+    padding: 0.4rem 1.5rem;
+    margin-bottom: 30px;
+  }
+
   .tabs {
     width: 100%;
+    max-width: 450px;
+    margin-bottom: 30px;
   }
 
   .tab {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    text-align: center;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .how-it-works-section {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    padding: 0.3rem 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .tabs {
+    max-width: 320px;
+  }
+
+  .tab {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .tab-content {
+    margin: 0 -15px;
   }
 }

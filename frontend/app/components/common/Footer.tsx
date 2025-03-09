@@ -78,7 +78,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Copyright section */}
       <div className="copyright">
         © GotoEcom. Copyright 2025. All rights reserved.
       </div>

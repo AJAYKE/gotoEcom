@@ -88,10 +88,31 @@
 
 @media (max-width: 768px) {
   .ai-title {
-    font-size: 2rem;
+    padding: 10px;
+    width: 100%;
+    font-size: medium;
   }
 
   .ai-description {
     font-size: 1rem;
+  }
+  .ai-image {
+    display: none;
+  }
+  .ai-powered-section {
+    position: relative;
+  }
+
+  .ai-powered-section::before {
+    content: "";
+    background: url("/images/icons/AiImage.svg") no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
 }

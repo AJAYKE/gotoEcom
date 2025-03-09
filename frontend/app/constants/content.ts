@@ -50,8 +50,7 @@ export const content = {
       {
         number: "03",
         title: "Explore Brand Collabs",
-        description:
-          'Click the Collab icon "✉" to discover brand partnerships.',
+        description: "Click the Collab icon '' to discover brand partnerships.",
       },
       {
         number: "04",
@@ -121,15 +120,15 @@ export const content = {
     tagline: "Shop . Connect . Grow",
     sections: {
       aboutUs: {
-        title: "About Us :",
+        title: "About Us",
         links: ["How it Works", "Features"],
       },
       support: {
-        title: "Support :",
+        title: "Support",
         links: ["Contact Us"],
       },
       social: {
-        title: "Follow Us On :",
+        title: "Follow Us On",
       },
     },
   },

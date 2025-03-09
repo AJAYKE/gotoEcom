@@ -4,7 +4,12 @@
 }
 
 .brands-info {
-  background-color: var(--color-card-background, rgba(11, 27, 51, 0.6));
+  background: linear-gradient(
+    219.02deg,
+    rgba(9, 124, 228, 0.33) 7.09%,
+    rgba(9, 124, 228, 0.13) 63.93%,
+    rgba(8, 125, 231, 0.09) 100%
+  );
   border-radius: var(--border-radius-md, 16px);
   padding: var(--spacing-xl, 40px);
   border: 1px solid var(--color-border-subtle, rgba(77, 119, 255, 0.15));
@@ -12,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
+  min-width: 350px;
   margin: 0 auto;
 }
 

@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { content } from "../../constants/content";
-import { submitToGoogleSheets } from "../../utils/googleSheets";
 import Button from "./Button";
 import "./styles/ContactForm.css";
-
-const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx4VTKcHC56Ok1DrOkJO65wC2nxJH9Tqa4jevZqjqI/dev";
 
 interface ContactFormProps {
   className?: string;
@@ -41,30 +37,35 @@ const ContactForm: React.FC<ContactFormProps> = ({
     setError(null);
 
     try {
-      const dataToSubmit = {
-        ...formData,
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx4VTKcHC56Ok1DrOkJO65wC2nxJH9Tqa4jevZqjqI/dev";
+
+      const params = new URLSearchParams({
         formType: "contact",
-      };
+        name: formData.name,
+        contact: formData.contact,
+        email: formData.email,
+        message: formData.message,
+      });
 
-      const response = await submitToGoogleSheets(
-        dataToSubmit,
-        GOOGLE_SCRIPT_URL
-      );
+      await fetch(`${scriptURL}?${params.toString()}`, {
+        method: "GET",
+        mode: "no-cors", //
+      });
 
-      if (response.success) {
-        setFormData({
-          name: "",
-          contact: "",
-          email: "",
-          message: "",
-        });
-        if (onSubmit) onSubmit();
-      } else {
-        setError(response.message);
-      }
+      console.log("Form submitted successfully");
+
+      setFormData({
+        name: "",
+        contact: "",
+        email: "",
+        message: "",
+      });
+
+      if (onSubmit) onSubmit();
     } catch (err) {
-      setError("Failed to submit form. Please try again later.");
-      console.error("Form submission error:", err);
+      console.error("Error submitting form:", err);
+      setError("An error occurred. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -83,7 +84,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
             placeholder="Type here"
             value={formData.name}
             onChange={handleChange}
-            required
           />
         </div>
 
@@ -124,7 +124,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            required
           ></textarea>
         </div>
 

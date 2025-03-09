@@ -12,7 +12,10 @@ const HowItWorksFashion: React.FC = () => {
               <div className="step-number">{step.number}</div>
               <h3 className="step-title">{step.title}</h3>
             </div>
-            <div className="step-description">{step.description}</div>
+            <div className="step-description">
+              <div className="check-icon">✓</div>
+              <span>{step.description}</span>
+            </div>
           </div>
         ))}
       </div>
