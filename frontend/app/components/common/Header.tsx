@@ -1,6 +1,5 @@
 "use client";
-
-import LogoIcon from "@/public/images/logo";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import "./styles/Header.css";
@@ -48,12 +47,16 @@ const Header = () => {
   return (
     <header className={`header-container ${scrolled ? "header-scrolled" : ""}`}>
       <div className="logo">
-        <Link href="/">
-          <LogoIcon />
-        </Link>
+        <Image
+          src={"images/icons/Onlylogo.svg"}
+          alt={"GoToEcom"}
+          width={60}
+          height={60}
+        />
+        <span className="logo-text">GoToEcom</span>
       </div>
 
-      <nav className="main-nav">
+      <div className="main-nav">
         <ul className="nav-links">
           <li>
             <Link
@@ -104,7 +107,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </div>
 
       <Link
         href="#contact-us"

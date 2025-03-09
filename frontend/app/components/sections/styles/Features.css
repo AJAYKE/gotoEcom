@@ -1,5 +1,5 @@
 .features-section {
-  background-color: var(--color-background, #0b1221);
+  background-color: #0b1221;
   display: flex;
   flex-direction: column;
   justify-content: center;

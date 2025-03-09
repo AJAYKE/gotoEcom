@@ -1,5 +1,5 @@
 .how-brands {
-  width: 100%;
+  width: fit-content;
   padding: var(--spacing-md, 24px) 0;
 }
 
@@ -10,7 +10,7 @@
     rgba(9, 124, 228, 0.13) 63.93%,
     rgba(8, 125, 231, 0.09) 100%
   );
-  border-radius: var(--border-radius-md, 16px);
+  border-radius: var(--border-radius-md, 24px);
   padding: var(--spacing-xl, 40px);
   border: 1px solid var(--color-border-subtle, rgba(77, 119, 255, 0.15));
   text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .reach-out-btn {
-  background-color: var(--color-blue-main, #0066ff);
+  background: rgba(9, 124, 228, 1);
   color: var(--color-text-primary, white);
   font-size: var(--font-size-md, 16px);
   font-weight: 500;
@@ -55,7 +55,6 @@
   background-color: var(--color-blue-hover, #0052cc);
 }
 
-/* Contact form overlay styles */
 .contact-form-overlay {
   position: fixed;
   top: 0;
@@ -67,7 +66,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(15px);
 }
 
 .contact-form-container {
@@ -77,7 +76,8 @@
   max-width: 500px;
   border: 1px solid white;
   position: relative;
-  box-shadow: 0 4px 15px white;
+  box-shadow: 0 4px 7px white;
+  background-color: (255, 255, 255, 0.5);
 }
 
 .close-button {
@@ -103,7 +103,6 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .brands-info {
     padding: var(--spacing-lg, 24px);

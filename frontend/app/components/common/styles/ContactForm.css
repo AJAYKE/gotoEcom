@@ -2,7 +2,6 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: transparent;
   border: none;
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
@@ -47,7 +46,7 @@
 
 .form-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(77, 119, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(77, 119, 255, 0.1);
 }
 
 .textarea {
