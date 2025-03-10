@@ -52,6 +52,7 @@ const Header = () => {
           alt={"GoToEcom"}
           width={60}
           height={60}
+          className="logo-image"
         />
         <span className="logo-text">GoToEcom</span>
       </div>

@@ -14,8 +14,8 @@ const Features: React.FC = () => {
   return (
     <section className="features-section" id="features">
       <div className="features-header">
-        <h2 className="section-title">Features</h2>
-        <h3 className="features-headline">Why Choose GotoEcom?</h3>
+        <h2 className="section-title">{content.features.title}</h2>
+        <h3 className="features-headline">{content.features.headline}</h3>
       </div>
 
       <div className="features-content">

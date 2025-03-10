@@ -78,7 +78,11 @@ const SignUp: React.FC = () => {
   };
 
   if (submitted) {
-    return <SuccessMessage type="signUp" />;
+    return (
+      <section className="signup-section" id="contact-us">
+        <SuccessMessage type="signUp" />
+      </section>
+    );
   }
 
   return (

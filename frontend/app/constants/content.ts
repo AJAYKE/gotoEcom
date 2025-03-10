@@ -1,9 +1,11 @@
 export const content = {
   heroSection: {
     tagline: "Your Fashion. Your Influence. Your Marketplace.",
-    headline: "The Future of Fashion Commerce & Collaboration",
-    description:
-      "A social commerce platform bridging the gap between Brands, Creators & Fashion Enthusiasts.",
+    headline: ["The Future of Fashion", "Commerce & Collaboration"],
+    description: [
+      "A social commerce platform bridging the gap between Brands,",
+      "Creators & Fashion Enthusiasts.",
+    ],
   },
 
   aboutUs: {
@@ -82,6 +84,7 @@ export const content = {
   },
 
   features: {
+    title: "Features",
     headline: "Why Choose GotoEcom?",
     featureList: [
       {

@@ -1,3 +1,4 @@
+import { content } from "@/app/constants/content";
 import { Brands } from "@/public/images/icons/brands";
 import { FashionEnthusiastsIcon } from "@/public/images/icons/Icon-Fashion enthusisasts";
 import React from "react";
@@ -7,16 +8,10 @@ const AboutUs: React.FC = () => {
   return (
     <section className="about-section" id="about-us">
       <div className="about-header">
-        <h2 className="about-title">About Us</h2>
+        <h2 className="about-title">{content.aboutUs.headline}</h2>
       </div>
 
-      <p className="about-description">
-        GOTOECOM is a social commerce platform where fashion enthusiasts
-        discover, share, and shape trends. It connects people through style,
-        making fashion more interactive and community-driven. Explore new looks,
-        express your fashion sense, and be part of the conversation that defines
-        what&apos;s next in fashion.
-      </p>
+      <p className="about-description">{content.aboutUs.description}</p>
 
       <div className="about-cards">
         <div className="about-card">
@@ -24,32 +19,25 @@ const AboutUs: React.FC = () => {
             <FashionEnthusiastsIcon />
           </div>
 
-          <h3 className="card-title">Fashion Enthusiasts</h3>
-          <p className="card-subtitle">
-            Monetize Your Influence & Shape Trends
-          </p>
+          <h3 className="card-title">{content.fashionEnthusiasts.title}</h3>
+          <p className="card-subtitle">{content.fashionEnthusiasts.subtitle}</p>
 
           <ul className="card-benefits">
             <li>
               <div className="check-icon">✓</div>
-              <span>Collaborate with brands</span>
+              <span>{content.fashionEnthusiasts.benefits[0]}</span>
             </li>
             <li>
               <div className="check-icon">✓</div>
-              <span>
-                Showcase your style with trend-focused content & share your
-                fashion insights.
-              </span>
+              <span>{content.fashionEnthusiasts.benefits[1]}</span>
             </li>
             <li>
               <div className="check-icon">✓</div>
-              <span>
-                Earn by creating authentic, engaging content & affiliating links
-              </span>
+              <span>{content.fashionEnthusiasts.benefits[2]}</span>
             </li>
             <li>
               <div className="check-icon">✓</div>
-              <span>Connect with followers through discussions & polls</span>
+              <span>{content.fashionEnthusiasts.benefits[3]}</span>
             </li>
           </ul>
         </div>
@@ -59,31 +47,25 @@ const AboutUs: React.FC = () => {
             <Brands />
           </div>
 
-          <h3 className="card-title">Brands</h3>
-          <p className="card-subtitle">
-            Expand Your Reach & Engage the Right Audience
-          </p>
+          <h3 className="card-title">{content.brands.title}</h3>
+          <p className="card-subtitle">{content.brands.subtitle}</p>
 
           <ul className="card-benefits">
             <li>
               <div className="check-icon">✓</div>
-              <span>Effortless influencer discovery & collaboration</span>
+              <span>{content.brands.benefits[0]}</span>
             </li>
             <li>
               <div className="check-icon">✓</div>
-              <span>
-                Use GOTOECOM&apos;s analytics to track campaign performance.
-              </span>
+              <span>{content.brands.benefits[1]}</span>
             </li>
             <li>
               <div className="check-icon">✓</div>
-              <span>Gain targeted exposure through creator-driven content</span>
+              <span>{content.brands.benefits[2]}</span>
             </li>
             <li>
               <div className="check-icon">✓</div>
-              <span>
-                Track engagement, reach, and conversion rates in real time.
-              </span>
+              <span>{content.brands.benefits[3]}</span>
             </li>
           </ul>
         </div>
