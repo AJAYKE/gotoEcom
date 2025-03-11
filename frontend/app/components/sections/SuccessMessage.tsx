@@ -15,8 +15,8 @@ const SuccessMessage: React.FC<SuccessMessageProps> = ({ type }) => {
             <Image
               src="/images/icons/MailFlyerReachOut.svg"
               alt="Email icon"
-              width={60}
-              height={60}
+              width={120}
+              height={120}
             />
           </div>
 
@@ -50,8 +50,8 @@ const SuccessMessage: React.FC<SuccessMessageProps> = ({ type }) => {
             <Image
               src="/images/icons/MailFlyerReachOut.svg"
               alt="Email icon"
-              width={60}
-              height={60}
+              width={140}
+              height={140}
             />
           </div>
         </div>
@@ -59,7 +59,6 @@ const SuccessMessage: React.FC<SuccessMessageProps> = ({ type }) => {
     );
   }
 
-  // SignUp success message
   return (
     <div className="signup-success-container">
       <div className="waves-background"></div>

@@ -57,11 +57,11 @@
   flex: 1;
   max-width: 450px;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.08);
   border: 1.08px solid rgba(255, 255, 255, 0.24);
   border-radius: 12px;
   backdrop-filter: blur(27.408775329589844px);
-  box-shadow: 2.44px 2.44px 16.62px 2.44px rgba(255, 255, 255, 0.35);
+  box-shadow: 1.44px 1.44px 16.61px 1.44px rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
 }
 
@@ -112,7 +112,6 @@
 
 .submit-btn {
   background: rgba(9, 124, 228, 1);
-
   color: white;
   padding: 12px 24px;
   border-radius: 8px;

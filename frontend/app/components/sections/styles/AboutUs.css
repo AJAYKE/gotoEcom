@@ -10,7 +10,6 @@
 
 .about-header {
   text-align: center;
-  margin-bottom: 1.5rem;
   border-radius: 2rem;
   border: 0.43px solid rgba(9, 124, 228, 0.88);
   backdrop-filter: blur(11.392406463623047px);
@@ -37,7 +36,7 @@
 .about-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 7rem;
+  gap: 6rem;
 }
 
 .about-card {
@@ -52,6 +51,7 @@
   position: relative;
   border: 1px solid rgba(77, 119, 255, 0.3);
   backdrop-filter: blur(5px);
+  width: 550px;
 }
 
 .card-icon {
@@ -114,6 +114,7 @@
 
   .about-card {
     margin: 10px;
+    width: 350px;
   }
 
   .about-section {

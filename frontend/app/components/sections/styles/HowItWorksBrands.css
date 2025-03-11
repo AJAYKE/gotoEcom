@@ -74,18 +74,19 @@
   padding: var(--spacing-lg, 32px);
   width: 90%;
   max-width: 500px;
-  border: 1px solid white;
+  border: 1.08px solid rgba(255, 255, 255, 0.24);
   position: relative;
-  box-shadow: 0 4px 7px white;
-  background-color: (255, 255, 255, 0.5);
+  backdrop-filter: blur(27.408775329589844px);
+  box-shadow: 1.44px 1.44px 16.61px 1.44px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 .close-button {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: rgba(255, 255, 255, 0.7);
-  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
   cursor: pointer;
@@ -100,6 +101,9 @@
 
 .close-button:hover {
   color: white;
+  font-size: 22px;
+  width: 25px;
+  height: 25px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
