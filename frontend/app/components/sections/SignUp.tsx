@@ -1,11 +1,9 @@
+import { SCRIPT_URL } from "@/app/utils/googleSheets";
 import React, { useState } from "react";
 import { content } from "../../constants/content";
 import Button from "../common/Button";
 import "./styles/SignUp.css";
 import SuccessMessage from "./SuccessMessage";
-
-const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbw4IEaUV-BhT3mu6acHqDgHYKFga8B0q_2RSeNdYp689qi0jkeSMwwK8xaN44ABckE/exec";
 
 const SignUp: React.FC = () => {
   const [email, setEmail] = useState("");

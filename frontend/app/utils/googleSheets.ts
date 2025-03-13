@@ -1,42 +1,37 @@
-// utils/googleSheets.ts
+export const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbw4IEaUV-BhT3mu6acHqDgHYKFga8B0q_2RSeNdYp689qi0jkeSMwwK8xaN44ABckE/exec";
 
-/**
- * Submit form data to Google Sheets using Google Apps Script
- * @param formData The data to submit to Google Sheets
- * @param endpoint The deployed Google Apps Script web app URL
- * @returns Promise with the response
- */
-export const submitToGoogleSheets = async (
-  formData: Record<string, unknown>,
-  endpoint: string
-): Promise<{ success: boolean; message: string }> => {
-  try {
-    const response = await fetch(endpoint, {
-      method: "POST",
-      mode: "cors",
-      cache: "no-cache",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+// function doPost(e) {
+//   try {
+//     const data = JSON.parse(e.postData.getDataAsString());
+//     let sheet;
+//     const row = [];
 
-    const data = await response.json();
+//     if (data.formType === "query") {
+//       sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Queries");
+//       if (!sheet) {
+//         sheet = SpreadsheetApp.getActiveSpreadsheet().insertSheet("Queries");
+//         sheet.appendRow(["Name", "Email", "Message", "Timestamp"]);
+//       }
+//       row.push(data.name || "");
+//       row.push(data.email);
+//       row.push(data.message || "");
+//       row.push(new Date());
+//     } else if (data.formType === "interest") {
+//       sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Interest");
+//       if (!sheet) {
+//         sheet = SpreadsheetApp.getActiveSpreadsheet().insertSheet("Interest");
+//         sheet.appendRow(["Email", "Timestamp"]);
+//       }
+//       row.push(data.email);
+//       row.push(new Date());
+//     } else {
+//       return ContentService.createTextOutput("Notok");
+//     }
 
-    if (!response.ok) {
-      throw new Error(data.error || "Failed to submit form");
-    }
-
-    return {
-      success: true,
-      message: "Form submitted successfully",
-    };
-  } catch (error) {
-    console.error("Error submitting to Google Sheets:", error);
-    return {
-      success: false,
-      message:
-        error instanceof Error ? error.message : "An unknown error occurred",
-    };
-  }
-};
+//     sheet.appendRow(row);
+//     return ContentService.createTextOutput("ok");
+//   } catch (error) {
+//     return ContentService.createTextOutput("Notok");
+//   }
+// }

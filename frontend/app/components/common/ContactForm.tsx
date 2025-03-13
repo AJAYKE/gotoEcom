@@ -1,3 +1,4 @@
+import { SCRIPT_URL } from "@/app/utils/googleSheets";
 import React, { useState } from "react";
 import { content } from "../../constants/content";
 import Button from "./Button";
@@ -37,10 +38,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
     setError(null);
 
     try {
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbw4IEaUV-BhT3mu6acHqDgHYKFga8B0q_2RSeNdYp689qi0jkeSMwwK8xaN44ABckE/exec";
-
-      const response = await fetch(scriptURL, {
+      const response = await fetch(SCRIPT_URL, {
         method: "POST",
         headers: {
           "Content-Type": "text/plain",
