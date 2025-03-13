@@ -179,7 +179,7 @@
   }
 
   .signup-title {
-    font-size: 1.8rem;
+    font-size: 20px;
     margin-bottom: 15px;
   }
 
@@ -200,11 +200,11 @@
   }
 
   .signup-title {
-    font-size: 1.5rem;
+    font-size: 16px;
   }
 
   .signup-description {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .form-input {

@@ -1,27 +1,27 @@
 .ai-powered-section {
-  padding: 80px 40px;
+  padding: 32px 40px;
   background-color: #01101d;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  text-align: center;
 }
 
 .ai-content {
   width: 100%;
   max-width: 1200px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .ai-title {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-text-primary);
-  margin-bottom: 30px;
   background: linear-gradient(to right, #ffffff, #b0b7c3);
   -webkit-background-clip: text;
   background-clip: text;
@@ -196,10 +196,10 @@
   }
 
   .ai-title {
-    font-size: 1.5rem;
+    font-size: 16px;
   }
 
   .ai-description {
-    font-size: 0.95rem;
+    font-size: 14px;
   }
 }
