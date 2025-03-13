@@ -52,6 +52,7 @@ const SuccessMessage: React.FC<SuccessMessageProps> = ({ type }) => {
               alt="Email icon"
               width={140}
               height={140}
+              className="email-icon"
             />
           </div>
         </div>

@@ -193,6 +193,11 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .success-message-container {
+    min-height: 30vh;
+  }
+}
 @media (max-width: 768px) {
   .success-message-card {
     padding: 40px 25px;
@@ -241,11 +246,12 @@
 
 @media (max-width: 480px) {
   .success-message-card {
-    padding: 30px 20px;
+    padding: 40px 20px;
+    min-height: 50vh;
   }
 
   .success-title {
-    font-size: 1.5rem;
+    font-size: 1.14rem;
   }
 
   .success-primary-text {
@@ -261,16 +267,21 @@
   }
 
   .top-left {
-    top: 15px;
-    left: 15px;
+    top: -2px;
+    left: 8px;
   }
 
   .bottom-right {
-    bottom: 10px;
-    right: 10px;
+    bottom: 28px;
+    right: 5px;
     width: 9px;
     height: 27px;
     transform: rotatey(140deg);
+  }
+
+  .email-icon img {
+    width: 55px;
+    height: 55px;
   }
 
   .signup-success-title {
