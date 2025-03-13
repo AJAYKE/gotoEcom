@@ -38,34 +38,34 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
     try {
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbx4VTKcHC56Ok1DrOkJO65wC2nxJH9Tqa4jevZqjqI/dev";
+        "https://script.google.com/macros/s/AKfycbw4IEaUV-BhT3mu6acHqDgHYKFga8B0q_2RSeNdYp689qi0jkeSMwwK8xaN44ABckE/exec";
 
-      const params = new URLSearchParams({
-        formType: "contact",
-        name: formData.name,
-        contact: formData.contact,
-        email: formData.email,
-        message: formData.message,
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: JSON.stringify({
+          formType: "query",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
       });
 
-      await fetch(`${scriptURL}?${params.toString()}`, {
-        method: "GET",
-        mode: "no-cors", //
-      });
+      const result = await response.text();
 
-      console.log("Form submitted successfully");
-
-      setFormData({
-        name: "",
-        contact: "",
-        email: "",
-        message: "",
-      });
-
-      if (onSubmit) onSubmit();
+      if (response.ok) {
+        setFormData({ name: "", contact: "", email: "", message: "" });
+        if (onSubmit) onSubmit();
+      } else {
+        console.error("Response not OK:", result);
+      }
     } catch (err) {
-      console.error("Error submitting form:", err);
-      setError("An error occurred. Please try again later.");
+      console.error("Fetch error details:", err);
+      if (err instanceof TypeError) {
+        console.error("TypeError message:", err.message);
+      }
     } finally {
       setIsSubmitting(false);
     }

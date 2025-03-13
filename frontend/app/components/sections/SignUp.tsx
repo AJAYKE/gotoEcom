@@ -5,7 +5,7 @@ import "./styles/SignUp.css";
 import SuccessMessage from "./SuccessMessage";
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx4VTKcHC56Ok1DrOkJO65wC2nxJH9Tqa4jevZqjqI/dev";
+  "https://script.google.com/macros/s/AKfycbw4IEaUV-BhT3mu6acHqDgHYKFga8B0q_2RSeNdYp689qi0jkeSMwwK8xaN44ABckE/exec";
 
 const SignUp: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -26,21 +26,21 @@ const SignUp: React.FC = () => {
     }
 
     try {
-      const formData = new FormData();
-      formData.append("formType", "signup");
-      formData.append("email", email);
-
       await fetch(SCRIPT_URL, {
         method: "POST",
-        body: formData,
-        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: JSON.stringify({
+          formType: "interest",
+          email: email,
+        }),
       });
 
       console.log("Form submitted successfully");
       setSubmitted(true);
     } catch (err) {
       console.error("Error submitting form:", err);
-
       if (retryCount < 1) {
         setRetryCount((prevCount) => prevCount + 1);
         tryAlternativeSubmission();
