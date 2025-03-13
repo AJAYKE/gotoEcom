@@ -49,7 +49,11 @@ const Footer: React.FC = () => {
           <div className="footer-links-section">
             <h4>{content.footer.sections.social.title}</h4>
             <div className="social-icons">
-              <a href="#" className="social-icon">
+              <a
+                href="https://www.youtube.com/@gotoecom"
+                target="_blank"
+                className="social-icon"
+              >
                 <Image
                   src="/images/icons/Youtube.svg"
                   alt="YouTube"
@@ -57,7 +61,11 @@ const Footer: React.FC = () => {
                   height={24}
                 />
               </a>
-              <a href="#" className="social-icon">
+              <a
+                href="https://www.linkedin.com/company/gotoecom"
+                target="_blank"
+                className="social-icon"
+              >
                 <Image
                   src="/images/icons/Linkedin.svg"
                   alt="LinkedIn"
@@ -65,7 +73,11 @@ const Footer: React.FC = () => {
                   height={24}
                 />
               </a>
-              <a href="#" className="social-icon">
+              <a
+                href="https://www.instagram.com/gotoecom/"
+                target="_blank"
+                className="social-icon"
+              >
                 <Image
                   src="/images/icons/Instagram.svg"
                   alt="Instagram"
