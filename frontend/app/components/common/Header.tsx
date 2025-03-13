@@ -46,7 +46,7 @@ const Header = () => {
 
   return (
     <header className={`header-container ${scrolled ? "header-scrolled" : ""}`}>
-      <div className="brand-logo" style={{ margin: "6px 0px 0px 0px" }}>
+      <div className="brand-logo">
         <Image
           src={"images/icons/Onlylogo.svg"}
           alt={"GoToEcom"}
