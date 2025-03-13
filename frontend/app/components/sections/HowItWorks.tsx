@@ -8,7 +8,7 @@ const HowItWorks: React.FC = () => {
 
   return (
     <section className="how-it-works-section" id="how-it-works">
-      <h2 className="section-title">How it works ?</h2>
+      <h2 className="section-title-how-it-works">How it works ?</h2>
 
       <div className="tabs">
         <button

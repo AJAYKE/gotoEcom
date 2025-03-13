@@ -20,7 +20,7 @@
 .about-title {
   display: inline-block;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   padding: 0.5rem 2rem;
 }
@@ -46,16 +46,15 @@
     rgba(9, 124, 228, 0.13) 63.93%,
     rgba(8, 125, 231, 0.09) 100%
   );
-  border-radius: 0.75rem;
+  border-radius: 12px;
   padding: 2rem;
   position: relative;
   border: 1px solid rgba(77, 119, 255, 0.3);
   backdrop-filter: blur(5px);
   width: 550px;
-}
-
-.card-icon {
-  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card-title {
@@ -68,7 +67,6 @@
 .card-subtitle {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.875rem;
-  margin: 0 0 1.5rem 0;
 }
 
 .card-benefits {
@@ -109,18 +107,17 @@
 @media (max-width: 768px) {
   .about-cards {
     grid-template-columns: 1fr;
-    gap: 2px;
+    gap: 16px;
   }
 
   .about-card {
-    margin: 10px;
     width: 350px;
+    padding: 1rem;
   }
 
   .about-section {
     padding: 2rem 0;
   }
-
   .about-description {
     padding: 0 1rem;
   }

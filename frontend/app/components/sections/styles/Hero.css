@@ -129,7 +129,7 @@
 
 @media (max-width: 992px) {
   .hero {
-    min-height: 600px;
+    min-height: 580px;
   }
 
   .hero-title {
@@ -177,11 +177,11 @@
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 300px;
+    min-height: 250px;
   }
 
   .hero::before {
-    width: 250%;
+    width: 200%;
   }
   .hero-title {
     font-size: 1.4rem;
@@ -197,5 +197,21 @@
   .hero-gradient-line {
     width: 90%;
     bottom: 10px;
+  }
+
+  .hero-gradient-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(5, 10, 20, 0) 0%,
+      rgba(25, 118, 242, 0.7) 50%,
+      rgba(5, 10, 20, 0) 100%
+    );
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
   }
 }

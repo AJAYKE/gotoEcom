@@ -1,6 +1,5 @@
 .how-fashion {
   width: 100%;
-  padding: 40px 0 20px;
 }
 
 .steps-grid {
@@ -98,10 +97,6 @@
 }
 
 @media (max-width: 768px) {
-  .how-fashion {
-    padding: 20px 0;
-  }
-
   .step-card {
     padding: 20px;
   }

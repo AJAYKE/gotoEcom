@@ -8,10 +8,10 @@
   background-color: #01101d;
 }
 
-.section-title {
+.section-title-how-it-works {
   display: inline-block;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
@@ -63,25 +63,23 @@
 
 @media (max-width: 992px) {
   .how-it-works-section {
-    padding: 60px 30px;
+    padding: 40px 30px;
   }
 }
 
 @media (max-width: 768px) {
   .how-it-works-section {
-    padding: 50px 20px;
+    padding: 40px 20px;
   }
 
-  .section-title {
+  .section-title-how-it-works {
     font-size: 1.3rem;
     padding: 0.4rem 1.5rem;
-    margin-bottom: 30px;
   }
 
   .tabs {
     width: 100%;
     max-width: 450px;
-    margin-bottom: 30px;
   }
 
   .tab {
@@ -92,13 +90,12 @@
 
 @media (max-width: 576px) {
   .how-it-works-section {
-    padding: 40px 15px;
+    padding: 32px 15px;
   }
 
-  .section-title {
+  .section-title-how-it-works {
     font-size: 1.1rem;
     padding: 0.3rem 1.2rem;
-    margin-bottom: 25px;
   }
 
   .tabs {

@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  padding: 40px 20px;
+  padding: 32px 20px;
 }
 
 .features-header {
@@ -17,11 +17,12 @@
   color: var(--color-text-primary, #fff);
   border-radius: var(--border-radius-full, 9999px);
   border-radius: 2rem;
+  padding: 0.5rem 2rem;
   border: 0.43px solid rgba(9, 124, 228, 0.88);
   backdrop-filter: blur(11.392406463623047px);
   box-shadow: 1.9px 2.37px 1.9px 0px #ffffff1f;
   background-color: rgba(11, 18, 33, 0.8);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 
@@ -125,7 +126,6 @@
   }
 
   .mobile-frame {
-    margin-bottom: var(--spacing-lg, 2rem);
     max-width: 400px;
     width: 100%;
   }

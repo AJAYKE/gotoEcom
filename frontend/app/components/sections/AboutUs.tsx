@@ -18,10 +18,12 @@ const AboutUs: React.FC = () => {
           <div className="card-icon">
             <FashionEnthusiastsIcon />
           </div>
-
-          <h3 className="card-title">{content.fashionEnthusiasts.title}</h3>
-          <p className="card-subtitle">{content.fashionEnthusiasts.subtitle}</p>
-
+          <div>
+            <h3 className="card-title">{content.fashionEnthusiasts.title}</h3>
+            <p className="card-subtitle">
+              {content.fashionEnthusiasts.subtitle}
+            </p>
+          </div>
           <ul className="card-benefits">
             <li>
               <div className="check-icon">✓</div>
@@ -46,10 +48,10 @@ const AboutUs: React.FC = () => {
           <div className="card-icon">
             <Brands />
           </div>
-
-          <h3 className="card-title">{content.brands.title}</h3>
-          <p className="card-subtitle">{content.brands.subtitle}</p>
-
+          <div>
+            <h3 className="card-title">{content.brands.title}</h3>
+            <p className="card-subtitle">{content.brands.subtitle}</p>
+          </div>
           <ul className="card-benefits">
             <li>
               <div className="check-icon">✓</div>
